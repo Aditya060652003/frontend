@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 import reservation from "../images/reservation.png";
 
 const Reservation = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [firstName, setfirstName] = useState("");
+  const [lastName, setlastName] = useState("");
   const [email, setEmail] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -29,8 +29,8 @@ const Reservation = () => {
         }
       );
       toast.success(data.message);
-      setFirstName("");
-      setLastName("");
+      setfirstName("");
+      setlastName("");
       setPhone(0);
       setEmail("");
       setTime("");
@@ -57,13 +57,13 @@ const Reservation = () => {
                   type="text"
                   placeholder="First Name"
                   value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
+                  onChange={(e) => setfirstName(e.target.value)}
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
                   value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
+                  onChange={(e) => setlastName(e.target.value)}
                 />
               </div>
               <div>
